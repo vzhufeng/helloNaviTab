@@ -114,7 +114,6 @@ class Tabs extends React.Component {
   render() {
     const { activeTabId, tabs } = this.state;
     const { deleteTab } = this;
-    const activeItem = tabs.find(v => v.tabId === activeTabId);
 
     return (
       <div className="hello-navi-tab">
@@ -152,7 +151,7 @@ class Tabs extends React.Component {
         </div>
         {
           tabs.map((v, k) => {
-            return <div key={k} className={`body ${activeItem.tabId === v.tabId ? 'active-body' : ''}`}>{v.body}</div>
+            return <div key={k} className={`body ${activeTabId === v.tabId ? 'active-body' : ''}`}>{v.body}</div>
           })
         }
       </div>
