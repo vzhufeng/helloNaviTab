@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "build": "rm -rf ./dist && rollup -c",
+    "dev": " rm -rf ./dist && rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-url": "^1.4.0"
   },
   "files": [
