@@ -1,0 +1,69 @@
+.hello-navi-tab {
+  .tabs {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    height: 28px;
+    padding: 12px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: #f0f0f0;
+    font-size: 14px;
+
+    .tab-item {
+      display: inline-block;
+      width: 125px;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 12px;
+      border-right: 1px solid #fff;
+      background: #d4d4d8;
+
+      &:hover .close-icon {
+        display: block;
+      }
+    }
+
+    .active-tab {
+      background: #fff;
+
+      .close-icon {
+        display: block;
+      }
+    }
+
+    .close-icon {
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAATVJREFUOBGlk7FugzAQhu0g0SF0iCUyZOlUJoZEiiJ1Y2LoS7SPlrwJr5ChZEJijwSqFAWJpKL3Q6+VDSaVcpLBmPt+3/nOQpCt1y+bOI6nmP/H4AsGvk43ubxWVRWEYZhmWXYZEwFcluWbEF/LxeLpPFHq8YOAIw2/KIr3sUgYbppmDsbzHlIHO2JnRAARWyR92NslSXJyCBK3RGwwWIkHGxyRBn37NI5KqS29BXL+C7vbGeswTQALpoiUkljOWYfh36aACZuZDq2jvHRgfRjMBI97rBeBmQKJn2n4dV0/D/WJJmDCCNt13T1giAyV+FdgCEad8zyvgyA42ERaAcBde4qfDtMPDCK2ZpMMj5WKD9mMEn3izGbzFS4GOVlLxQIosZ7O9bP9hxsZRZHHjrfeiISv8zexkgCx2P54zAAAAABJRU5ErkJggg==")
+        no-repeat center center;
+      float: right;
+      width: 16px;
+      height: 28px;
+      background-size: 75%;
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  .body {
+    display: none;
+  }
+
+  .active-body {
+    display: block;
+  }
+}
+
+.close-all-tabs {
+  position: fixed;
+  z-index: 100;
+  display: none;
+  border: 1px solid #eaeaeb;
+  cursor: pointer;
+  background: #fff;
+  padding: 8px;
+}
